@@ -4,7 +4,6 @@ const openPopupBtn = document.querySelector('.open-btn');
 const closePopupBtn = document.querySelector('.popup__close-btn');
 function openPopup(p) {
 p.classList.add('popup-opened');
-console.log(popup, openPopupBtn, closePopupBtn)
 }
 function closePopup(p) {
 p.classList.remove('popup-opened');

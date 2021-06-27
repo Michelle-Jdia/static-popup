@@ -8,7 +8,7 @@
 @mixin stylesLinkTag {
 	text-decoration: none;
 	&:visited,
-	:link {
+	&:link {
 		color: $color-black;
 	}
 }
