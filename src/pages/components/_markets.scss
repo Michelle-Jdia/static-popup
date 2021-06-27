@@ -1,6 +1,6 @@
 .markets {
 	&__box {
-		max-width: 71%;
+		max-width: 100%;
 	}
 	&__btn {
 		@include stylesLinkTag;
@@ -13,25 +13,5 @@
 		border-radius: .5rem;
 		margin-right: .8rem;
 		margin-bottom: .8rem;
-	}
-}
-@media all and (max-width: 626px) {
-	.markets__box {
-		max-width: 76%;
-	}
-}
-@media all and (max-width: 588px) {
-	.markets__box {
-		max-width: 90%;
-	}
-}
-@media all and (max-width: 500px) {
-	.markets__box {
-		max-width: 70%;
-	}
-}
-@media all and (max-width: 499px) {
-	.markets__box {
-		max-width: 80%;
 	}
 }
