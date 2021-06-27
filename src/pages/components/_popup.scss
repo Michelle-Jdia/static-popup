@@ -1,6 +1,9 @@
 .popup {
 	display: none;
-	position: relative;
+	position: absolute;
+	top: 1rem;
+	left: 50%;
+	transform: translate(-50%);
 	max-width: 50%;
 	margin: 0 auto;
 	padding: 3rem;
@@ -46,11 +49,11 @@
 		background-image: url("/src/images/search-icon.svg");
 		background-size: cover;
 		background-position: center;
-		width: 35px;
-		height: 35px;
+		width: 3.5rem;
+		height: 3.5rem;
 		position: absolute;
-		top: 14.5px;
-		right: 7px;
+		top: 1.45rem;
+		right: .7rem;
 		transition: all .2s;
 		opacity: .8;
 		&:hover {

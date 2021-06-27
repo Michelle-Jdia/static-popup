@@ -9,7 +9,7 @@
 	display: inline-block;
 	border-radius: 10rem;
 	transition: all ease-out .2s;
-	margin: 5rem 2rem;
+	margin: 5rem 1rem;
 	&:hover {
 		box-shadow: 0 1rem 2rem rgba($color-black, .2);
 		transform: translateY(-3px);
@@ -52,7 +52,6 @@
 
 .btn-yellow {
 	background-color: #fddc04;
-	color: $color-black;
 	font-size: 1.1rem;
 	font-weight: 800;
 	width: 100%;
