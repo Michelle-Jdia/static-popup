@@ -6,9 +6,10 @@
 	}
 }
 @mixin stylesLinkTag {
+	color: $color-black;
 	text-decoration: none;
-	&:visited,
-	&:link {
+	&:link,
+	&:visited {
 		color: $color-black;
 	}
 }
