@@ -1,0 +1,65 @@
+.btn {
+	cursor: pointer;
+	border: none;
+	font-size: $default-font-size;
+	position: relative;
+	text-transform: uppercase;
+	text-decoration: none;
+	padding: 1.5rem 4rem;
+	display: inline-block;
+	border-radius: 10rem;
+	transition: all ease-out .2s;
+	margin: 5rem 2rem;
+	&:hover {
+		box-shadow: 0 1rem 2rem rgba($color-black, .2);
+		transform: translateY(-3px);
+		&::after {
+			opacity: 0;
+			transform: scaleX(1.5) scaleY(1.6);
+		}
+	}
+	&:active {
+		box-shadow: 0 .5rem 1rem rgba($color-black, .2);
+		transform: translateY(-1px);
+	}
+
+	&::after {
+		content: "";
+		display: inline-block;
+		position: absolute;
+		top: 0;
+		left: 0;
+		height: 100%;
+		width: 100%;
+		border-radius: 10rem;
+		transition: all .4s;
+	}
+
+	&-white {
+		background-color: $color-white;
+		color: $color-grey-dark;
+		&::after {
+			z-index: -1;
+			background-color: $color-white;
+		}
+	}
+
+	&-animated {
+		animation: moveInBottom .5s ease-out;
+		animation-fill-mode: backwards;
+	}
+}
+
+.btn-yellow {
+	background-color: #fddc04;
+	color: $color-black;
+	font-size: 1.1rem;
+	font-weight: 800;
+	width: 100%;
+	display: inline-block;
+	border-radius: 3rem;
+	padding: .7rem 1.5rem;
+	text-align: center;
+	@include stylesLinkTag;
+	@include animatedLinkTag;
+}

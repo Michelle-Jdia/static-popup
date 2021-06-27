@@ -1,0 +1,21 @@
+@mixin clearfix {
+	&::after {
+		content: "";
+		display: table;
+		clear: both;
+	}
+}
+@mixin stylesLinkTag {
+	text-decoration: none;
+	&:visited,
+	:link {
+		color: $color-black;
+	}
+}
+@mixin animatedLinkTag {
+	transition: all .3s;
+	&:hover {
+		opacity: .8;
+		transform: scale(1.02);
+	}
+}

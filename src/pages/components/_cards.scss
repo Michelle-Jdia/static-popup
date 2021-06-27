@@ -1,0 +1,64 @@
+.cards {
+	max-width: 100%;
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-template-rows: auto;
+	gap: 4.5rem 3rem;
+	&__item {
+		position: relative;
+		perspective: 150rem;
+		-moz-perspective: 150rem;
+		height: 12.2rem;
+		animation: moveInBottomCards 2s ease;
+	}
+	&__item:hover &__side-front {
+		transform: rotateY(-180deg);
+	}
+	&__item:hover &__side-back {
+		transform: rotateY(0);
+	}
+	&__side {
+		position: absolute;
+		top: 0;
+		right: 0;
+		width: 100%;
+		height: 100%;
+		backface-visibility: hidden;
+		border-radius: 1rem;
+		transition: all .8s;
+		box-shadow: 0rem .5rem 1rem rgba($color-black, .45);
+	}
+	&__box-img {
+		height: 100%;
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	&__img {
+		width: $default-img-size;
+		-webkit-box-reflect: below 0px -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(65%, transparent), to(rgba(250, 250, 250, 0.2)));
+	}
+
+	&__subtitle {
+		font-size: $default-font-size;
+		margin-top: 1rem;
+		text-transform: uppercase;
+	}
+
+	&__side-front {
+		background-image: $color-wavey-blue-grey;
+	}
+	&__side-back {
+		text-align: center;
+		transform: rotateY(180deg);
+		background-image: url("/src/images/cosmos.jpg");
+		background-size: cover;
+		&-text {
+			font-size: 2rem;
+			color: $color-white;
+			margin-top: 4rem;
+			text-transform: uppercase;
+		}
+	}
+}

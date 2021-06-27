@@ -1,0 +1,105 @@
+@keyframes moveInLeft {
+	0% {
+		opacity: 0;
+		transform: translateX(-10rem);
+		-webkit-transform: translateX(-10rem);
+		-moz-transform: translateX(-10rem);
+		-ms-transform: translateX(-10rem);
+		-o-transform: translateX(-10rem);
+	}
+	80% {
+		transform: translateX(1rem);
+		-webkit-transform: translateX(1rem);
+		-moz-transform: translateX(1rem);
+		-ms-transform: translateX(1rem);
+		-o-transform: translateX(1rem);
+	}
+	100% {
+		opacity: 1;
+		transform: translate(0);
+		-webkit-transform: translate(0);
+		-moz-transform: translate(0);
+		-ms-transform: translate(0);
+		-o-transform: translate(0);
+	}
+}
+
+@keyframes moveInRight {
+	0% {
+		opacity: 0;
+		transform: translateX(10rem);
+		-webkit-transform: translateX(10rem);
+		-moz-transform: translateX(10rem);
+		-ms-transform: translateX(10rem);
+		-o-transform: translateX(10rem);
+	}
+	80% {
+		transform: translateX(-1rem);
+		-webkit-transform: translateX(-1rem);
+		-moz-transform: translateX(-1rem);
+		-ms-transform: translateX(-1rem);
+		-o-transform: translateX(-1rem);
+	}
+	100% {
+		opacity: 1;
+		transform: translate(0);
+		-webkit-transform: translate(0);
+		-moz-transform: translate(0);
+		-ms-transform: translate(0);
+		-o-transform: translate(0);
+	}
+}
+
+@keyframes moveInBottom {
+	0% {
+		opacity: 0;
+		transform: translateY(7rem);
+		-webkit-transform: translateY(7rem);
+		-moz-transform: translateY(7rem);
+		-ms-transform: translateY(7rem);
+		-o-transform: translateY(7rem);
+	}
+	100% {
+		opacity: 1;
+		transform: translate(0);
+		-webkit-transform: translate(0);
+		-moz-transform: translate(0);
+		-ms-transform: translate(0);
+		-o-transform: translate(0);
+	}
+}
+@keyframes moveInBottomCards {
+	0% {
+		opacity: 0;
+		transform: translateY(3rem);
+		-webkit-transform: translateY(3rem);
+		-moz-transform: translateY(3rem);
+		-ms-transform: translateY(3rem);
+		-o-transform: translateY(3rem);
+	}
+	70% {
+		transform: rotate(160deg);
+		-webkit-transform: rotate(160deg);
+		-moz-transform: rotate(160deg);
+		-ms-transform: rotate(160deg);
+		-o-transform: rotate(160deg);
+	}
+	100% {
+		opacity: 1;
+		transform: rotate(0);
+		-webkit-transform: rotate(0);
+		-moz-transform: rotate(0);
+		-ms-transform: rotate(0);
+		-o-transform: rotate(0);
+	}
+}
+@keyframes popup {
+	0% {
+		opacity: 0;
+		transform: scale(0);
+	}
+	100% {
+		opacity: 1;
+		transform: scale(1);
+	}
+}

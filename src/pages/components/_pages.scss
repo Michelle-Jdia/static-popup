@@ -1,0 +1,46 @@
+.pages {
+	animation: moveInBottom ease 1s;
+	&__box {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: space-between;
+		background-image: $color-wavey-blue-grey;
+		padding: 1.5rem;
+		border-radius: .5rem;
+		&:not(:last-child) {
+			margin-bottom: 1.2rem;
+		}
+		animation: moveInBottom ease 1.5s;
+	}
+	&__img-box {
+		margin-right: .6rem;
+		animation: moveInLeft linear 1.5s;
+		& a {
+			@include stylesLinkTag;
+			@include animatedLinkTag;
+		}
+	}
+	&__img {
+		height: 6.5rem;
+		width: 6.5rem;
+		border-radius: .5rem;
+	}
+	&__text-box {
+		padding: .8rem;
+		animation: moveInRight linear 1.5s;
+	}
+	&__title {
+		font-size: 1.5rem;
+		margin-bottom: .6rem;
+		font-weight: 700;
+	}
+	&__subtitle {
+		font-size: 1.1rem;
+		font-weight: 700;
+		line-height: 1.8;
+	}
+	&__box-btn {
+		animation: moveInRight linear 1.5s;
+	}
+}

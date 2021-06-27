@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Popup Static</title>
+</head>
+
+<body class="body">
+    <a class="btn btn-white btn-animated open-btn">Open</a>
+    <div class="popup">
+        <a class="popup__close-btn"></a>
+        <h1 class="popup__title">Search</h1>
+        <!-- search -->
+        <form class="popup__search-container">
+            <input type="search" name="" id="" class="popup__search" placeholder="search something...">
+            <a href="#" class="popup__search-btn"></a>
+            <a href="#" class="popup__subtitle">planets (8)</a>
+            <a href="#" class="popup__subtitle">space (3)</a>
+            <a href="#" class="popup__subtitle">galaxy (3)</a>
+            <a href="#" class="popup__subtitle">sky (19)</a>
+        </form>
+        <div class="border-bottom"></div>
+        <h2 class="popup__text-result">Planets (8)</h2>
+        <!-- cards -->
+        <div class="cards margin-bottom-big">
+            <article class="cards__item">
+                <div class="cards__side cards__side-front">
+                    <div class="cards__box-img">
+                        <img src="<%=require('./images/uranus.svg')%>" alt="Uranus" class="cards__img">
+                    </div>
+                    <p class="cards__subtitle">Uranus</p>
+                </div>
+                <div class="cards__side cards__side-back">
+                    <h3 class="cards__side-back-text">Uranus</h3>
+
+                </div>
+            </article>
+            <article class="cards__item">
+                <div class="cards__side cards__side-front">
+                    <div class="cards__box-img">
+                        <img src="<%=require('./images/mars.svg')%>" alt="mars" class="cards__img">
+                    </div>
+                    <p class="cards__subtitle">Mars</p>
+                </div>
+                <div class="cards__side cards__side-back">
+                    <h3 class="cards__side-back-text">Mars</h3>
+
+                </div>
+            </article>
+            <article class="cards__item">
+                <div class="cards__side cards__side-front">
+                    <div class="cards__box-img">
+                        <img src="<%=require('./images/jupiter.svg')%>" alt="Jupiter" class="cards__img">
+                    </div>
+                    <p class="cards__subtitle">Jupiter</p>
+                </div>
+                <div class="cards__side cards__side-back">
+                    <h3 class="cards__side-back-text">Jupiter</h3>
+
+                </div>
+            </article>
+            <article class="cards__item">
+                <div class="cards__side cards__side-front">
+                    <div class="cards__box-img">
+                        <img src="<%=require('./images/mercury.svg')%>" alt="Mercury" class="cards__img">
+                    </div>
+                    <p class="cards__subtitle">Mercury</p>
+                </div>
+                <div class="cards__side cards__side-back">
+                    <h3 class="cards__side-back-text">Mercury</h3>
+
+                </div>
+            </article>
+            <article class="cards__item">
+                <div class="cards__side cards__side-front">
+                    <div class="cards__box-img">
+                        <img src="<%=require('./images/neptune.svg')%>" alt="Neptune" class="cards__img">
+                    </div>
+                    <p class="cards__subtitle">Neptune</p>
+                </div>
+                <div class="cards__side cards__side-back">
+                    <h3 class="cards__side-back-text">Neptune</h3>
+
+                </div>
+            </article>
+            <article class="cards__item">
+                <div class="cards__side cards__side-front">
+                    <div class="cards__box-img">
+                        <img src="<%=require('./images/venus.svg')%>" alt="Venus" class="cards__img">
+                    </div>
+                    <p class="cards__subtitle">Venus</p>
+                </div>
+                <div class="cards__side cards__side-back">
+                    <h3 class="cards__side-back-text">Venus</h3>
+
+                </div>
+            </article>
+            <article class="cards__item">
+                <div class="cards__side cards__side-front">
+                    <div class="cards__box-img">
+                        <img src="<%=require('./images/saturn.svg')%>" alt="Saturn" class="cards__img">
+                    </div>
+                    <p class="cards__subtitle">Saturn</p>
+                </div>
+                <div class="cards__side cards__side-back">
+                    <h3 class="cards__side-back-text">Saturn</h3>
+
+                </div>
+            </article>
+            <article class="cards__item">
+                <div class="cards__side cards__side-front">
+                    <div class="cards__box-img">
+                        <img src="<%=require('./images/earth.svg')%>" alt="Earth" class="cards__img">
+                    </div>
+                    <p class="cards__subtitle">Earth</p>
+                </div>
+                <div class="cards__side cards__side-back">
+                    <h3 class="cards__side-back-text">Earth</h3>
+
+                </div>
+            </article>
+        </div>
+        <!-- pages -->
+        <div class="pages margin-bottom-medium">
+            <a class="pages__box link-box-styles link-box-animated" href="#">
+                <div class="pages__img-box">
+                    
+                    <img src="<%=require('./images/astronaut.svg')%>" alt="" class="pages__img">
+                </div>
+                <div class="pages__text-box">
+                    <h4 class="pages__title">Lorem ipsum dolor sit</h4>
+                    <p class="pages__subtitle">amet consectetur adipisicing elit. Repellendus modi
+                        neque enim fugit soluta voluptatem ea facilis? Alias reprehenderit.</p>
+                </div>
+            </a>
+            <a class="pages__box link-box-styles link-box-animated" href="#">
+                <div class="pages__img-box">
+                    <img src="<%=require('./images/galaxy2.svg')%>" alt="" class="pages__img">
+                </div>
+                <div class="pages__text-box">
+                    <h4 class="pages__title">Lorem ipsum dolor sit</h4>
+                    <p class="pages__subtitle">amet consectetur adipisicing elit. Repellendus modi
+                        neque enim fugit soluta voluptatem ea facilis? Alias reprehenderit.</p>
+                </div>
+            </a>
+            <a class="pages__box link-box-styles link-box-animated" href="#">
+                <div class="pages__img-box">
+                    <img src="<%=require('./images/galaxy3.svg')%>" alt="" class="pages__img">
+                </div>
+                <div class="pages__text-box">
+                    <h4 class="pages__title">Lorem ipsum dolor sit</h4>
+                    <p class="pages__subtitle">amet consectetur adpisicing elit. Repellendus modi
+                        neque enim fugit soluta voluptatem ea facilis? Alias reprehenderit.</p>
+                </div>
+            </a>
+
+        </div>
+        <div class="maps margin-bottom-medium">
+            <h2 class="popup__text-result">Filialen (3)</h2>
+            <div class="pages__box">
+                <div class="pages__img-box">
+                    <a href="https://www.google.ru/maps"><img src="<%=require('./images/map.svg')%>" alt="" class="pages__img"></a>
+                </div>
+                <div class="pages__text-box  margin-right-auto">
+                    <p class="pages__subtitle margin-bottom-smallest"><span class="green-span">Jelzle geoffnet</span>
+                        —Heute bis 18:00 uhr</p>
+                    <h5 class="pages__title">Hamburg City</h5>
+                    <p class="pages__subtitle">jungfernstieg 51.20354 Hamburg</p>
+                </div>
+                <div class="pages__box-btn">
+                    <a href="https://calendar.google.com/calendar" class="btn-yellow"><i
+                            class="far fa-calendar"></i>&nbsp; Lorem ipsum dolordolor</a>
+                </div>
+            </div>
+            <div class="pages__box">
+                <div class="pages__img-box">
+                    <a href="https://www.google.ru/maps"><img src="<%=require('./images/map.svg')%>" alt="" class="pages__img"></a>
+                </div>
+                <div class="pages__text-box  margin-right-auto">
+                    <p class="pages__subtitle margin-bottom-smallest"><span class="green-span">Jelzle geoffnet</span>
+                        —Heute bis 18:00 uhr</p>
+                    <h5 class="pages__title">Hamburg City</h5>
+                    <p class="pages__subtitle">jungfernstieg 51.20354 Hamburg</p>
+                </div>
+                <div class="pages__box-btn">
+                    <a href="https://calendar.google.com/calendar" class="btn-yellow"><i
+                            class="far fa-calendar"></i>&nbsp; Lorem ipsum dolordolor</a>
+                </div>
+            </div>
+            <div class="pages__box">
+                <div class="pages__img-box">
+                    <a href="https://www.google.ru/maps"><img src="<%=require('./images/map.svg')%>" alt="" class="pages__img"></a>
+                </div>
+                <div class="pages__text-box  margin-right-auto">
+                    <p class="pages__subtitle margin-bottom-smallest"><span class="green-span">Jelzle geoffnet</span>
+                        —Heute bis 18:00 uhr</p>
+                    <h5 class="pages__title">Hamburg City</h5>
+                    <p class="pages__subtitle">jungfernstieg 51.20354 Hamburg</p>
+                </div>
+                <div class="pages__box-btn">
+                    <a href="https://calendar.google.com/calendar" class="btn-yellow"><i
+                            class="far fa-calendar"></i>&nbsp; Lorem ipsum dolordolor</a>
+                </div>
+            </div>
+        </div>
+        <div class="markets">
+            <h2 class="popup__text-result">Marken (19)</h2>
+            <div class="markets__box">
+                <a href="#" class="markets__btn">Fraims</a>
+                <a href="#" class="markets__btn">Marc O'Polo</a>
+                <a href="#" class="markets__btn">Dick Moby</a>
+                <a href="#" class="markets__btn">Calvin Klein</a>
+                <a href="#" class="markets__btn">Barton Perreira</a>
+                <a href="#" class="markets__btn">Bolle</a>
+                <a href="#" class="markets__btn">Brendel</a>
+                <a href="#" class="markets__btn">Carolina Herrera</a>
+                <a href="#" class="markets__btn">Cartier</a>
+                <a href="#" class="markets__btn">Cazal</a>
+                <a href="#" class="markets__btn">Celine</a>
+                <a href="#" class="markets__btn">Chanel</a>
+                <a href="#" class="markets__btn">Chloe</a>
+                <a href="#" class="markets__btn">Davidoff</a>
+                <a href="#" class="markets__btn">Dior</a>
+                <a href="#" class="markets__btn">Emporio Armani</a>
+                <a href="#" class="markets__btn">Esprit</a>
+                <a href="#" class="markets__btn">Etnia Barcelona</a>
+                <a href="#" class="markets__btn">Flair</a>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
